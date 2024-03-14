@@ -14,11 +14,11 @@ while (isNaN(userNum)){
 function createArray(n) {
     let arrayMaster = [];
     let array = [];
+    for (let i = 0; i < 10; i++) {
+        const randomNum = getRndInteger(1, 100);
+        array.push(randomNum);
+    }
     for (let i = 0; i < n; i++) {
-        for (let i = 0; i < 10; i++) {
-         const randomNum = getRndInteger(1, 100);
-         array.push(randomNum);
-        }
         console.log(array);
         arrayMaster.push(array);
     }
