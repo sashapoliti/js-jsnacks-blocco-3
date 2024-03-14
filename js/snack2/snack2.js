@@ -12,15 +12,15 @@ while (isNaN(userNum)){
 }
 
 function createArray(n) {
+    let arrayMaster = [];
+    let array = [];
     for (let i = 0; i < n; i++) {
-        let arrayMaster = [];
-        let array = [];
         for (let i = 0; i < 10; i++) {
          const randomNum = getRndInteger(1, 100);
-         array[i].push(randomNum);
+         array.push(randomNum);
         }
         console.log(array);
-        arrayMaster[i].push(array);
+        arrayMaster.push(array);
     }
     return arrayMaster
   }
